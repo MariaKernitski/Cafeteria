@@ -35,3 +35,5 @@ let op = prompt("");
         break;
     }
 }
+
+// arrumar o erro quando a pessoa atualiza indice que nao existe e o programa adiciona esse indice 
