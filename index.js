@@ -2,7 +2,9 @@ const prompt = require("prompt-sync")();
 
 const {criar, lista, atualiza, remove} = require("./crud.js");
 
-console.log("Bem Vindo(a) à Cafeteria Doces Sonhos!");
+var nome = prompt ("Digite o nome da cafeteria: ");
+
+console.log(`Bem Vindo(a) à Cafeteria ${nome}! Sinta-se à vontade para registrar o menu!`);
 
 while(true) {
 
@@ -26,7 +28,7 @@ let op = prompt("");
         case "4": remove();
         break;
         case "5":
-            console.log("Obrigada por utilizar nossos serviços! Até logo!")
+            console.log("Agradecemos a preferência! Até logo!")
             process.exit();
         break;
         default: console.log("Opção inválida.");
